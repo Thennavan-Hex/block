@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search on Blockchain</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+	<body>
+
+
+		<style>
+			#searchTextBox{
+				border-width: 1px;
+				border-radius: 3px;
+				margin-right: 0;
+				width: 80%;
+				height: 35px;
+			}
+
+			#searchBtn{
+				border-width: 1px;
+				border-radius: 3px;
+				margin-left: 0;
+				width: 10%;
+				height: 35px;
+			}
+
+		</style>
+
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="
+sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="
+sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<script src="js/sha256.js"></script>
+		<script src="js/web3.min.js"></script>
+		<script src="js/certifyWebApp.js"></script>
+		<script src="js/app.js"></script>
+
+
+
+		<div class="jumbotron" style="border-radius: 0; background-color: #34495e">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8" style="text-align: center">
+				<h2 style="color: #fff"><b>Blockchain application for   certification management</b></h3>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+		</div>
+
+
+
+
+		<div class="container">
+			<div style="margin: 0 auto; text-align: center;">
+				<h3>Search for Certificates</h3>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-6" style="margin: 0 auto; text-align: center;">
+						<input id="searchTextBox" type="text" name="searchitem" placeholder="Search">
+						<button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+					</div>
+					<div class="col-md-3"></div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8" style="margin-top: 20px; padding: 15px; border: solid 1px #ccc; border-radius: 5px">
+						<div id = "responseText" style="margin: 0 auto; text-align: center; color: #34495e">
+							<p style="font-weight: lighter;">No result yet</p>
+						</div>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+		</div>
+
+
+	</body>
+</html>	
